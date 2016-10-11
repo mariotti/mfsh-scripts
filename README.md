@@ -1,0 +1,17 @@
+# A collection of shell scripts
+
+This is not a project, but more a collection of maybe
+useful things I collected during the years.
+
+    Some are from my blog: https://blog.techottis.ch/
+
+I thought that gists canot really be linked together,
+so this will become the blog repo and its own collection.
+
+    For example:
+
+	https://blog.techottis.ch/2013/01/19/a-small-script-gplot-csh-quick-plotting-with-gnuplot/
+
+	https://blog.techottis.ch/2013/05/01/a-small-script-taritdate-sh-tars-directories-with-dates/
+	    
+Soon more docs here.
