@@ -29,12 +29,12 @@ Soon more docs here.
 
  In principle it works much alike the Mac OS time machine.
 
-You need first to define a backup directory (which can be on a network disk, any which shows as path on your
-system. For example I have a samba mounted on my macbook). This is this line in the scriopt:
+You need first to define a backup directory (which can be on a network disk, any which shows as a path on your
+system. For example I have a samba mounted on my macbook). This is this line in the script:
 
     DIRRSYNC="/Volumes/ExtDisk/MacBackUp"
 
-The rest id preconfigured, but check the script which is really few lines.
+The rest is preconfigured, but check the script which is really few lines.
 
 Then
 
@@ -60,7 +60,7 @@ with only the requested backup directory as parameter.
 This because we might need different options depending on the destination. One option is already
 mentioned as comment in the script: '--modify-window=1'.
 This is used when for example you are working with Samba, SMB, or Windows destinations as you
-might endup on a file system which has only a 1 minute (+-1 implicit) time diference stored
+might end up on a file system which has only a 1 minute (+-1 implicit) time difference stored
 for file dates.
 
 Ahh, I did it because I read everywhere about using rsync for backups but I could not find
