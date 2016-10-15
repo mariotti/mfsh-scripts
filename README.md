@@ -53,12 +53,12 @@ and you might need to look only on the old backups, like:
 
     grep myfile /Volumes/ExtDisk/MacBackUp-BP/DirToBackUp/*.filelist
 
-The backup destination is hardcoded. My idea is to use the script in the future as templates
+The backup destination is hardcoded. My idea is to use the script in the future as a templates
 and create scripts like: backmeup.dest01.sh, backmeup.dest02.sh and use them in a cron job
 with only the requested backup directory as parameter.
 
 This because we might need different options depending on the destination. One option is already
-metioned as comment in the script: '--modify-window=1'.
+mentioned as comment in the script: '--modify-window=1'.
 This is used when for example you are working with Samba, SMB, or Windows destinations as you
 might endup on a file system which has only a 1 minute (+-1 implicit) time diference stored
 for file dates.
