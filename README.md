@@ -62,3 +62,7 @@ metioned as comment in the script: '--modify-window=1'.
 This is used when for example you are working with Samba, SMB, or Windows destinations as you
 might endup on a file system which has only a 1 minute (+-1 implicit) time diference stored
 for file dates.
+
+Ahh, I did it because I read everywhere about using rsync for backups but I could not find
+any example. This is a starting example, and I will use it. So I might update for bugs
+soon.
