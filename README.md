@@ -13,6 +13,8 @@ so this will become the blog repo and its own collection.
 	https://blog.techottis.ch/2013/01/19/a-small-script-gplot-csh-quick-plotting-with-gnuplot/
 
 	https://blog.techottis.ch/2013/05/01/a-small-script-taritdate-sh-tars-directories-with-dates/
+	
+	https://blog.techottis.ch/2016/10/15/backup-with-rsync-a-la-time-machine-a-proof/
 	    
 Soon more docs here.
 
