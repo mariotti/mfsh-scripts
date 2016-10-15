@@ -19,3 +19,10 @@ PRGDIRBACKUPS="${HOME}/tmp/rs/rsyncBackup-BP/${1}/"
 echo "Running: " rsync ${OPTRSYNC} ${DIRBKPUP} $1 ${DIRRSYNC}/${PRJDIR}
 rsync ${OPTRSYNC} ${DIRBKPUP} $1 ${DIRRSYNC}/${PRJDIR}
 #
+#
+# Create List Files
+if [ -d ${DIRBACKUPS}/${PRJDIR} ]; then
+  cd ${DIRBACKUPS}
+  find ${PRJDIR}/B-${mydate} > ${PRJDIR}/B-${mydate}.filelist
+fi;
+#
