@@ -18,11 +18,11 @@ Soon more docs here.
 
 # Programs
 
- ## gplot.csh
+## gplot.csh
 
- ## taritdate.sh
+## taritdate.sh
 
- ## backmeup.sh
+## backmeup.sh
 
  This script uses rsync as a "backup system". It is not definitely yet a full backup solution but
  it is indeed very handy.
