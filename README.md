@@ -5,7 +5,7 @@ useful things I collected during the years.
 
     Some are from my blog: https://blog.techottis.ch/
 
-I thought that gists canot really be linked together,
+I thought that gists cannot really be linked together,
 so this will become the blog repo and its own collection.
 
     For example:
@@ -24,47 +24,13 @@ Soon more docs here.
 
 ## taritdate.sh
 
-## backmeup.sh
+## backmeup
 
- This script uses rsync as a "backup system". It is not definitely yet a full backup solution but
- it is indeed very handy.
+This has now his how project at [BMU](https://github.com/mariotti/bmu)
 
- In principle it works much alike the Mac OS time machine.
+## Others
 
-You need first to define a backup directory (which can be on a network disk, any which shows as a path on your
-system. For example I have a samba mounted on my macbook). This is this line in the script:
+I added a section others.
 
-    DIRRSYNC="/Volumes/ExtDisk/MacBackUp"
+This is random commands I need to keep handy, just in case.
 
-The rest is preconfigured, but check the script which is really few lines.
-
-Then
-
-    backmeup.sh DirToBackUp
-
-will create a directory '/Volumes/ExtDisk/MacBackUp/DirToBackUp/DirToBackUp' which is a copy of your original dir,
-and eventually later a directory '/Volumes/ExtDisk/MacBackUp-BP/DirToBackUp/B-<DATE>' which contains deleted
-and changed files old versions.
-
-The script is in very beta but a starting point.
-
-It creates also a file list for the '/Volumes/ExtDisk/MacBackUp-BP/DirToBackUp/B-<DATE>' directory.
-
-The idea is that if you look for a file, you know already which file on your current system,
-and you might need to look only on the old backups, like:
-
-    grep myfile /Volumes/ExtDisk/MacBackUp-BP/DirToBackUp/*.filelist
-
-The backup destination is hardcoded. My idea is to use the script in the future as a templates
-and create scripts like: backmeup.dest01.sh, backmeup.dest02.sh and use them in a cron job
-with only the requested backup directory as parameter.
-
-This because we might need different options depending on the destination. One option is already
-mentioned as comment in the script: '--modify-window=1'.
-This is used when for example you are working with Samba, SMB, or Windows destinations as you
-might end up on a file system which has only a 1 minute (+-1 implicit) time difference stored
-for file dates.
-
-Ahh, I did it because I read everywhere about using rsync for backups but I could not find
-any example. This is a starting example, and I will use it. So I might update for bugs
-soon.
