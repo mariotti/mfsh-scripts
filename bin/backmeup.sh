@@ -30,3 +30,5 @@ if [ -d ${DIRBACKUPS}/${PRJDIR} ]; then
   find ${PRJDIR}/B-${mydate} > ${PRJDIR}/B-${mydate}.filelist
 fi;
 #
+# Update a local copy of the db for locate
+gupdatedb -o ${DIRRSYNC}/.locate.db --localpaths="${DIRRSYNC}"

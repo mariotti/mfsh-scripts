@@ -42,7 +42,7 @@ Then
 
     backmeup.sh DirToBackUp
 
-will create a directory '/Volumes/ExtDisk/MacBackUp/DirToBackUp' which is a copy of your original dir,
+will create a directory '/Volumes/ExtDisk/MacBackUp/DirToBackUp/DirToBackUp' which is a copy of your original dir,
 and eventually later a directory '/Volumes/ExtDisk/MacBackUp-BP/DirToBackUp/B-<DATE>' which contains deleted
 and changed files old versions.
 
