@@ -5,5 +5,5 @@ testEquality() {
 	assertEquals 1 1
 }
 
-. shunit2-2.1.3/src/shunit2
+. ./others/shunit2/source/2.1/src/shunit2
 
