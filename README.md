@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/mariotti/mfsh-scripts.png?label=ready&title=Ready)](https://waffle.io/mariotti/mfsh-scripts)
 [![Build Status](https://travis-ci.org/mariotti/mfsh-scripts.svg?branch=master)](https://travis-ci.org/mariotti/mfsh-scripts)
 
 
