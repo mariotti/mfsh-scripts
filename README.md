@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/mariotti/mfsh-scripts.svg?branch=master)](https://travis-ci.org/mariotti/mfsh-scripts)
+
+
 # A collection of shell scripts
 
 This is not a project, but more a collection of maybe
