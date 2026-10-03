@@ -7,8 +7,10 @@
 # Usage: sh test/taritdate_test.sh   (run from the repo root)
 #
 # Every test_* function below is invoked indirectly, by name, via
-# run()/with_tmpdir(); shellcheck can't see that from the call site.
-# shellcheck disable=SC2329
+# run()/with_tmpdir(); shellcheck can't see that from the call site,
+# so it flags the functions themselves (SC2329) and, cascading from
+# that, every statement inside them as unreachable (SC2317).
+# shellcheck disable=SC2329,SC2317
 
 set -u
 
