@@ -1,0 +1,27 @@
+name: ShellCheck and tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  shellcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # shellcheck is preinstalled on the ubuntu-latest runner image.
+      - name: Run ShellCheck on bin/*.sh and test/*.sh
+        run: shellcheck bin/*.sh test/*.sh
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run taritdate.sh tests
+        run: sh test/taritdate_test.sh
+
+      - name: Run gplot.sh tests
+        run: sh test/gplot_test.sh
