@@ -25,4 +25,4 @@ Moved to its own project: [bmug2](https://github.com/mariotti/bmug2)
 
 A section of random commands I need to keep handy, just in case.
 
-- `others/jq/NOTES.md` — jq recipes for walking/renaming/merging JSON.
+- `others/jq/RECIPES.md` — jq recipes for walking/renaming/merging JSON.
