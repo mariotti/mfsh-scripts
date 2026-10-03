@@ -11,8 +11,6 @@ jobs:
       - uses: actions/checkout@v4
 
       # shellcheck is preinstalled on the ubuntu-latest runner image.
-      # bin/*.csh is tcsh, which ShellCheck doesn't support
-      # (sh/bash/dash/ksh only), so only *.sh files are checked.
       - name: Run ShellCheck on bin/*.sh and test/*.sh
         run: shellcheck bin/*.sh test/*.sh
 
@@ -23,3 +21,6 @@ jobs:
 
       - name: Run taritdate.sh tests
         run: sh test/taritdate_test.sh
+
+      - name: Run gplot.sh tests
+        run: sh test/gplot_test.sh

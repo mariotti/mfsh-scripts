@@ -7,9 +7,10 @@ Some are from my old blog.
 
 # Programs
 
-## bin/gplot.csh
+## bin/gplot.sh
 
-Quick multi-column plotting with gnuplot.
+Quick multi-column plotting with gnuplot. (Converted from the
+original `gplot.csh`.)
 
 ## bin/taritdate.sh
 
@@ -29,11 +30,13 @@ A section of random commands I need to keep handy, just in case.
 
 # Tests
 
-`test/taritdate_test.sh` runs plain POSIX-sh tests against
-`bin/taritdate.sh` (no framework, no dependencies). Run it with:
+Plain POSIX-sh tests, no framework, no dependencies:
 
     sh test/taritdate_test.sh
+    sh test/gplot_test.sh
 
-Also checked in CI: `shellcheck` on `bin/*.sh` and `test/*.sh`
-(`bin/gplot.csh` is skipped — it's tcsh, which ShellCheck doesn't
-support).
+`gplot_test.sh` stubs out `gnuplot` on `$PATH` instead of calling the
+real one — the generated plot script ends with `pause -1`, which
+blocks waiting for Enter on a terminal.
+
+Also checked in CI: `shellcheck` on `bin/*.sh` and `test/*.sh`.
