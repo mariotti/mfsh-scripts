@@ -26,3 +26,14 @@ Moved to its own project: [bmug2](https://github.com/mariotti/bmug2)
 A section of random commands I need to keep handy, just in case.
 
 - `others/jq/RECIPES.md` — jq recipes for walking/renaming/merging JSON.
+
+# Tests
+
+`test/taritdate_test.sh` runs plain POSIX-sh tests against
+`bin/taritdate.sh` (no framework, no dependencies). Run it with:
+
+    sh test/taritdate_test.sh
+
+Also checked in CI: `shellcheck` on `bin/*.sh` and `test/*.sh`
+(`bin/gplot.csh` is skipped — it's tcsh, which ShellCheck doesn't
+support).
