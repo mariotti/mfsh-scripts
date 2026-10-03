@@ -1,3 +1,5 @@
+[![CI](https://github.com/mariotti/mfsh-scripts/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/mariotti/mfsh-scripts/actions/workflows/ci.yml)
+
 # A collection of shell scripts
 
 This is not a project, but more a collection of maybe
