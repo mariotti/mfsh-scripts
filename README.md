@@ -18,7 +18,8 @@ if that name is already taken.
 
 ## backmeup
 
-Moved to its own project: [BMU](https://github.com/mariotti/bmu)
+Moved to its own project: [bmug2](https://github.com/mariotti/bmug2)
+(continuation of the original [bmu](https://github.com/mariotti/bmu))
 
 ## Others
 
