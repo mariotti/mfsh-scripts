@@ -14,10 +14,45 @@ Some are from my old blog.
 Quick multi-column plotting with gnuplot. (Converted from the
 original `gplot.csh`.)
 
+Example (gnuplot normally opens a GUI window; this is what you get
+with `GNUTERM=dumb`, e.g. over an ssh session with no display):
+
+```
+$ GNUTERM=dumb gplot.sh data.txt
+Plot cmd: plot 'data.txt' using 1:2
+
+  9 +---------------------------------------------------+
+    |      +       +      +       +      +     **+ **** |
+  8 |-+                    'data.txt' using 1:* ***A****|
+    |                                        *          |
+  7 |-+                           A*       **         +-|
+    |                           **  ****  *             |
+  6 |-+                        *        *A            +-|
+    |                         *                         |
+  5 |-+           *A*       **                        +-|
+    |           **   ****  *                            |
+  4 |-+       **         *A                           +-|
+    |       **                                          |
+  3 |-+   *A                                          +-|
+    | **** +       +      +       +      +       +      |
+  2 +---------------------------------------------------+
+    1      2       3      4       5      6       7      8
+
+Hit return to continue
+```
+
 ## bin/taritdate.sh
 
 Tars a directory into `<dir>.<YYYYMMDD>.tar.gz`, adding a numeric suffix
 if that name is already taken.
+
+Example:
+
+```
+$ taritdate.sh photos
+$ ls -al photos.*.tar.gz
+-rw-r--r--  1 mariotti  wheel  187 Oct  3 21:15 photos.20261003.tar.gz
+```
 
 ## backmeup
 
