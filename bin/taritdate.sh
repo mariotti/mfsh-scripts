@@ -9,7 +9,7 @@ exit 1;
 fi;
 #
 # Make sure we have only one argument
-if ! [ -z "$2" ]; then
+if [ -n "$2" ]; then
 echo "Sorry but we only accept ONE directory only."
 exit 1;
 fi;
