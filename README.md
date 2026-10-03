@@ -42,3 +42,7 @@ real one — the generated plot script ends with `pause -1`, which
 blocks waiting for Enter on a terminal.
 
 Also checked in CI: `shellcheck` on `bin/*.sh` and `test/*.sh`.
+
+# License
+
+MIT, see [LICENSE](LICENSE).
